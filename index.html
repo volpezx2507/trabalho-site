@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULÁRIOS</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Formulário</h1>
+
+      <form action="#" method="POST">
+        <label for="name">Nome:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Digite seu nome"
+          required
+        />
+
+        <br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Digite seu email"
+          required
+        />
+
+        <br />
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" />
+
+        <br />
+
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age" min="1" max="100" />
+
+        <br />
+
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" />
+          Aceito os termos e condições
+        </label>
+
+        <br />
+
+        <label for="curso">
+          <input type="radio" id="curso" name="curso" value="TI" />
+          Informática
+        </label>
+        <label for="curso">
+          <input type="radio" id="curso" name="curso" value="ADM" />
+          Administração
+        </label>
+
+        <br />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+        <br />
+
+        <label for="country">País:</label>
+        <select id="country" name="country">
+          <option value="brasil">Brasil</option>
+          <option value="portugal">Portugal</option>
+          <option value="usa">EUA</option>
+        </select>
+
+        <br />
+
+        <label for="profile-pic">Foto de perfil:</label>
+        <input type="file" id="profile-pic" name="profile-pic" />
+
+        <br />
+
+        <button>Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
